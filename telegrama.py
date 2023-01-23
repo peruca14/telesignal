@@ -4,7 +4,7 @@ import requests as r
 class telegrama_api:
     def __init__(self, a):
         mensaje = {'chat_id' : <chatid>, 'text' : a}
-        r.post('API_TOKEN', mensaje)
+        r.post('https://api.telegram.org/bot<token>/sendMessage', mensaje)
 
 if __name__ == '__main__':
     None
